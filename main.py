@@ -78,9 +78,9 @@ def buy_token(amount_pls):
 # --- Task Scheduling ---
 def job():
     print("Running...")
-    buy_token(ORDERSIZE)  # Buy using 10000 PLS - ADJUST AS NEEDED
-job() # Do a buy as soon as the script is launched
-schedule.every().hour.do(job) # Do a buy every hour - ADJUST AS NEEDED
+    buy_token(ORDERSIZE)  # Buy using 20000 PLS - ADJUST AS NEEDED IN .ENV
+job() # Do a buy as soon as the script is launched (COMMENT IF YOU DON'T WANT TO INSTABUY)
+schedule.every().hour.do(job) # Do a buy every hour - ADJUST AS NEEDED, CFR README
 
 while True:
     schedule.run_pending()
