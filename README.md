@@ -1,6 +1,6 @@
-# Pumptiresbuyer
+# Pump.tires automatic buyer
 
-Pulsechain pump.tires automatic token buyer
+Pulsechain pump.tires automatic token buyer, buys a token every 10 minutes, 1 hour, 1 day, ...
 
 Pretty simple script I'm publishing because it's very hard to find a starting point into the Pulsechain ecosystem, there are no resources or docs available for most blockchain features.
 
@@ -9,6 +9,9 @@ I created this for me, after a lot of trials and invalid transactions it actuall
 It can help you as a token creator or as a token buyer. More features are coming (I'm thinking about a multitoken buyer and also automatically buying a small amount of pump.tires token as soon as they're released).
 
 To use it, it's very simple:
+
+Create your python environment and use the following command line to install the requirements
+*pip install web3 schedule dotenv*
 
 1) Edit the .env:
 -   PULSECHAIN_RPC_URL is where you put the RPC url, the address you will use to send your signed transactions, no key is transferred at this point and nobody can reverse engineer your transaction, it is sent as it is stored on the blockchain, for more information about how that works, please ask an AI about transaction signing. The default RPC is https://rpc.pulsechain.com and it's fine for now, but in case there are a lot of users at some point, you might have to use another more private one (or your own node) for fast and successful transactions.
