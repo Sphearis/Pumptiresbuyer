@@ -4,7 +4,7 @@ import time
 import os
 from dotenv import load_dotenv
 
-# Load privkey and rpc-url from .env
+# Load settings from .env
 load_dotenv()
 
 # --- PulseChain Node, Wallet, and Contract Addresses ---
